@@ -27,7 +27,7 @@ class CheckoutStream implements StreamInterface
     private $expectedLength;
     private $readedCount = 0;
 
-    public function __construct(StreamInterface $stream, $expectedLength)
+    public function __construct($stream, $expectedLength)
     {
         $this->stream = $stream;
         $this->expectedLength = $expectedLength;
